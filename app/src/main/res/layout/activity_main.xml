@@ -1,0 +1,78 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:clipToOutline="true"
+            android:elevation="4dp"
+            android:outlineProvider="background"
+            app:cardBackgroundColor="@android:color/darker_gray"
+            app:cardCornerRadius="16dp">
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/howItIsUsed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/yeonsung"
+            android:text="How it is used ?"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/box_background_light_ellipses_16"
+            android:drawableStart="@drawable/ic_clock"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/black"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+
+            android:padding="16dp"
+            android:text="@string/app_job_additional_service"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Switch
+            android:id="@+id/callAudioService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/box_background_light_ellipses_16"
+            android:drawableStart="@drawable/ic_call"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/black"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+
+            android:padding="16dp"
+            android:text="@string/app_job_additional_service"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    </LinearLayout>
+</ScrollView>
